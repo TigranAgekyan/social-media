@@ -1,6 +1,18 @@
 import React from 'react'
 import NavBar from '../crossPageComponents/NavBar'
-import { motion } from 'motion/react'
+import { AnimatePresence, motion } from 'motion/react'
+
+import creditCardPNG from '../assets/paymentMethodsIcons/creditCard.png'
+import paypalPNG from '../assets/paymentMethodsIcons/paypal.png'
+import applePayPNG from '../assets/paymentMethodsIcons/applePay.png'
+import googlePayPNG from '../assets/paymentMethodsIcons/googlePay.png'
+import stripePNG from '../assets/paymentMethodsIcons/stripe.png'
+import squarePNG from '../assets/paymentMethodsIcons/square.png'
+import authorizeNetPNG from '../assets/paymentMethodsIcons/authorizeNet.png'
+import amazonPayPNG from '../assets/paymentMethodsIcons/amazonPay.png'
+import afterpayPNG from '../assets/paymentMethodsIcons/afterpay.png'
+import helcimPNG from '../assets/paymentMethodsIcons/helcim.webp'
+
 
 interface Props {}
 
@@ -275,7 +287,7 @@ function ProgressBar(props: {checkoutStage: number}) {
                 <div className={`rounded-full ${props.complete ? 'bg-accent-cyan-light': 'bg-zinc-400'} aspect-square h-[75%] p-2 place-content-center items-center flex`}>
                     <motion.div initial={{height: props.index < stage ? '100%' : 0}} animate={{height: props.complete ? '100%' : 0}} transition={{ease: 'circOut', duration: .5}} className='rounded-full bg-bg-light aspect-square'/>
                 </div>
-                <span className='font-thin fixed translate-y-12'>{props.label}</span>
+                <span className='font-thin fixed translate-y-9'>{props.label}</span>
             </div>
         );
     }
@@ -295,12 +307,12 @@ function ProgressBar(props: {checkoutStage: number}) {
     );
 }
 
-function Footer() {
+function Footer(props: {buttonHandler?: (btnFunction: string) => void}) {
 
     return (
         <div className='w-full h-[15%] flex flex-row justify-between place-content-center items-center'>
-            <button className='border-1 border-red-500 hover:bg-red-500 transition-colors rounded-md px-2 py-1'>Back</button>
-            <button className='border-1 border-accent-cyan-light hover:bg-accent-cyan-light transition-colors rounded-md px-2 py-1'>Continue</button>
+            <button onClick={() => props.buttonHandler && props.buttonHandler('back')} className='border-1 border-red-500 hover:bg-red-500 transition-colors rounded-md px-2 py-1'>Back</button>
+            <button onClick={() => props.buttonHandler && props.buttonHandler('continue')} className='border-1 border-accent-cyan-light hover:bg-accent-cyan-light transition-colors rounded-md px-2 py-1'>Continue</button>
         </div>
     );
 }
@@ -309,10 +321,219 @@ function AddressScreen() {
 
     return (
         <div className='w-full h-full flex flex-col'>
-            <div className='w-full h-full bg-yellow-500'>
-
+            <div className='w-full h-full'>
+                <form className='w-full h-full flex flex-row gap-8'>
+                    <div id='addressFields' className='w-full h-[85%] grid grid-cols-2 grid-rows-3 gap-4 border-l-2 border-accent-cyan-light pl-4 pr-8 py-4'>
+                        <motion.div initial={{ opacity: 0, transform: 'translateX(10px)' }} animate={{ opacity: 1, transform: 'translateX(0)' }} transition={{delay: 0}} className='w-full flex flex-col gap-1'>
+                            <label htmlFor='street' className='font-semibold'>Street Address</label>
+                            <input id='street' type='text' className='w-full p-2 border-1 border-gray-300 rounded-sm'/>
+                        </motion.div>
+                        <motion.div initial={{ opacity: 0, transform: 'translateX(10px)' }} animate={{ opacity: 1, transform: 'translateX(0)' }} transition={{delay: 0.1}} className='w-full flex flex-col gap-1'>
+                            <label htmlFor='city' className='font-semibold'>City</label>
+                            <input id='city' type='text' className='w-full p-2 border-1 border-gray-300 rounded-sm'/>
+                        </motion.div>
+                        <motion.div initial={{ opacity: 0, transform: 'translateX(10px)' }} animate={{ opacity: 1, transform: 'translateX(0)' }} transition={{delay: 0.2}} className='w-full flex flex-col gap-1'>
+                            <label htmlFor='state' className='font-semibold'>State/Province</label>
+                            <input id='state' type='text' className='w-full p-2 border-1 border-gray-300 rounded-sm'/>
+                        </motion.div>
+                        <motion.div initial={{ opacity: 0, transform: 'translateX(10px)' }} animate={{ opacity: 1, transform: 'translateX(0)' }} transition={{delay: 0.3}} className='w-full flex flex-col gap-1'>
+                            <label htmlFor='zip' className='font-semibold'>ZIP/Postal Code</label>
+                            <input id='zip' type='text' className='w-full p-2 border-1 border-gray-300 rounded-sm'/>
+                        </motion.div>
+                        <motion.div initial={{ opacity: 0, transform: 'translateX(10px)' }} animate={{ opacity: 1, transform: 'translateX(0)' }} transition={{delay: 0.4}} className='w-full flex flex-col gap-1'>
+                            <label htmlFor='country' className='font-semibold'>Country</label>
+                            <select id='country' className='w-full p-2 border-1 border-gray-300 rounded-sm'>
+                                {
+                                    country_list.map((country) => (
+                                        <option key={country.id} value={country.id}>{country.name}</option>
+                                    ))
+                                }
+                            </select>
+                        </motion.div>
+                    </div>
+                    <div id='personalInfo' className='w-full flex flex-col gap-4 border-l-2 border-accent-cyan-light pl-4 pr-8 py-4'>
+                        <motion.div initial={{ opacity: 0, transform: 'translateX(10px)' }} animate={{ opacity: 1, transform: 'translateX(0)' }} transition={{delay: 0}} className='w-full flex flex-col gap-1'>
+                            <label htmlFor='fullName' className='font-semibold'>Full Name</label>
+                            <input id='fullName' type='text' className='w-full p-2 border-1 border-gray-300 rounded-sm' />
+                        </motion.div>
+                        <motion.div initial={{ opacity: 0, transform: 'translateX(10px)' }} animate={{ opacity: 1, transform: 'translateX(0)' }} transition={{delay: 0.1}} className='w-full flex flex-col gap-1'>
+                            <label htmlFor='email' className='font-semibold'>Email</label>
+                            <input id='email' type='email' className='w-full p-2 border-1 border-gray-300 rounded-sm' />
+                        </motion.div>
+                        <motion.div initial={{ opacity: 0, transform: 'translateX(10px)' }} animate={{ opacity: 1, transform: 'translateX(0)' }} transition={{delay: 0.2}} className='w-full flex flex-col gap-1'>
+                            <label htmlFor='phone' className='font-semibold'>Phone Number</label>
+                            <input id='phone' type='tel' className='w-full p-2 border-1 border-gray-300 rounded-sm' />
+                        </motion.div>
+                    </div>
+                </form>
             </div>
-            <Footer/>
+        </div>
+    );
+}
+
+function BillingScreen() {
+
+    const [paymentMethod, setPaymentMethod] = React.useState('none');
+
+    const paymentMethods = [
+        { name: 'Credit Card', id: 'creditCard', img: creditCardPNG },
+        { name: 'PayPal', id: 'paypal', img: paypalPNG },
+        { name: 'Apple Pay', id: 'applePay', img: applePayPNG },
+        { name: 'Google Pay', id: 'googlePay', img: googlePayPNG },
+        { name: 'Stripe', id: 'stripe', img: stripePNG },
+        { name: 'Square', id: 'square', img: squarePNG },
+        { name: 'Authorize.Net', id: 'authorizeNet', img: authorizeNetPNG },
+        { name: 'Amazon Pay', id: 'amazonPay', img: amazonPayPNG },
+        { name: 'Afterpay', id: 'afterpay', img: afterpayPNG },
+        { name: 'Helcim', id: 'helcim', img: helcimPNG }
+    ];
+
+    const PaymentMethodButton = (props: {method: {name: string, id: string, img: string}}) => {
+
+        return (
+            <div className='w-full h-[10%]'>
+                <button onClick={() => setPaymentMethod(props.method.id)} className={`gap-2 w-full h-full flex flex-row items-center p-2 rounded-sm border-1 border-gray-300 hover:border-accent-cyan-light ${paymentMethod === props.method.id ? 'bg-cyan-100' : ''} transition-colors`}>
+                    <img src={props.method.img} alt={props.method.name} className='h-full object-contain'/>
+                    <span>{props.method.name}</span>
+                </button>
+            </div>
+        );
+    }
+
+    const CreditCardInfo = () => {
+        return (
+            <div className='w-full h-full flex flex-col gap-4'>
+                <motion.div initial={{ opacity: 0, transform: 'translateX(10px)' }} animate={{ opacity: 1, transform: 'translateX(0)' }} transition={{delay: 0}} className='w-full flex flex-col gap-1'>
+                    <label htmlFor='cardNumber' className='font-semibold'>Card Number</label>
+                    <input id='cardNumber' type='text' className='w-full p-2 border-1 border-gray-300 rounded-sm' />
+                </motion.div>
+                <motion.div initial={{ opacity: 0, transform: 'translateX(10px)' }} animate={{ opacity: 1, transform: 'translateX(0)' }} transition={{delay: 0.1}} className='w-full flex flex-col gap-1'>
+                    <label htmlFor='cardName' className='font-semibold'>Name on Card</label>
+                    <input id='cardName' type='text' className='w-full p-2 border-1 border-gray-300 rounded-sm' />
+                </motion.div>
+                <motion.div initial={{ opacity: 0, transform: 'translateX(10px)' }} animate={{ opacity: 1, transform: 'translateX(0)' }} transition={{delay: 0.2}} className='w-full flex flex-row gap-4'>
+                    <div className='w-1/2 flex flex-col gap-1'>
+                        <label htmlFor='expDate' className='font-semibold'>Expiration Date</label>
+                        <input id='expDate' type='text' placeholder='MM/YY' className='w-full p-2 border-1 border-gray-300 rounded-sm' />
+                    </div>
+                    <motion.div initial={{ opacity: 0, transform: 'translateX(10px)' }} animate={{ opacity: 1, transform: 'translateX(0)' }} transition={{delay: 0.3}} className='w-1/2 flex flex-col gap-1'>
+                        <label htmlFor='cvv' className='font-semibold'>CVV</label>
+                        <input id='cvv' type='text' className='w-full p-2 border-1 border-gray-300 rounded-sm' />
+                    </motion.div>
+                </motion.div>
+            </div>
+        );
+    }
+
+    const PayPalInfo = () => {
+        return (
+            <div className='w-full h-full flex place-content-center items-center gap-4'>
+                <motion.button initial={{ opacity: 0, transform: 'translateX(10px)' }} animate={{ opacity: 1, transform: 'translateX(0)' }} transition={{delay: 0}} className='px-2 py-1 border-1 border-gray-300 hover:border-accent-cyan-light drop-shadow-sm hover:bg-cyan-100 transition-colors w-fit h-fit rounded-md'>Pay with PayPal</motion.button>
+            </div>
+        );
+    }
+
+    const ApplePayInfo = () => {
+        return (
+            <div className='w-full h-full flex place-content-center items-center gap-4'>
+                <motion.button initial={{ opacity: 0, transform: 'translateX(10px)' }} animate={{ opacity: 1, transform: 'translateX(0)' }} transition={{delay: 0}} className='px-2 py-1 border-1 border-gray-300 hover:border-accent-cyan-light drop-shadow-sm hover:bg-cyan-100 transition-colors w-fit h-fit rounded-md'>Pay with Apple Pay</motion.button>
+            </div>
+        );
+    }
+
+    const GooglePayInfo = () => {
+        return (
+            <div className='w-full h-full flex place-content-center items-center gap-4'>
+                <motion.button initial={{ opacity: 0, transform: 'translateX(10px)' }} animate={{ opacity: 1, transform: 'translateX(0)' }} transition={{delay: 0}} className='px-2 py-1 border-1 border-gray-300 hover:border-accent-cyan-light drop-shadow-sm hover:bg-cyan-100 transition-colors w-fit h-fit rounded-md'>Pay with Google Pay</motion.button>
+            </div>
+        );
+    }
+
+    const StripeInfo = () => {
+        return (
+            <div className='w-full h-full flex place-content-center items-center gap-4'>
+                <motion.button initial={{ opacity: 0, transform: 'translateX(10px)' }} animate={{ opacity: 1, transform: 'translateX(0)' }} transition={{delay: 0}} className='px-2 py-1 border-1 border-gray-300 hover:border-accent-cyan-light drop-shadow-sm hover:bg-cyan-100 transition-colors w-fit h-fit rounded-md'>Pay with Stripe</motion.button>
+            </div>
+        );
+    }
+
+    const SquareInfo = () => {
+        return (
+            <div className='w-full h-full flex place-content-center items-center gap-4'>
+                <motion.button initial={{ opacity: 0, transform: 'translateX(10px)' }} animate={{ opacity: 1, transform: 'translateX(0)' }} transition={{delay: 0}} className='px-2 py-1 border-1 border-gray-300 hover:border-accent-cyan-light drop-shadow-sm hover:bg-cyan-100 transition-colors w-fit h-fit rounded-md'>Pay with Square</motion.button>
+            </div>
+        );
+    }
+
+    const AuthorizeNetInfo = () => {
+        return (
+            <div className='w-full h-full flex place-content-center items-center gap-4'>
+                <motion.button initial={{ opacity: 0, transform: 'translateX(10px)' }} animate={{ opacity: 1, transform: 'translateX(0)' }} transition={{delay: 0}} className='px-2 py-1 border-1 border-gray-300 hover:border-accent-cyan-light drop-shadow-sm hover:bg-cyan-100 transition-colors w-fit h-fit rounded-md'>Pay with Authorize.Net</motion.button>
+            </div>
+        );
+    }
+
+    const AmazonPayInfo = () => {
+        return (
+            <div className='w-full h-full flex place-content-center items-center gap-4'>
+                <motion.button initial={{ opacity: 0, transform: 'translateX(10px)' }} animate={{ opacity: 1, transform: 'translateX(0)' }} transition={{delay: 0}} className='px-2 py-1 border-1 border-gray-300 hover:border-accent-cyan-light drop-shadow-sm hover:bg-cyan-100 transition-colors w-fit h-fit rounded-md'>Pay with Amazon Pay</motion.button>
+            </div>
+        );
+    }
+
+    const AfterPayInfo = () => {
+        return (
+            <div className='w-full h-full flex place-content-center items-center gap-4'>
+                <motion.button initial={{ opacity: 0, transform: 'translateX(10px)' }} animate={{ opacity: 1, transform: 'translateX(0)' }} transition={{delay: 0}} className='px-2 py-1 border-1 border-gray-300 hover:border-accent-cyan-light drop-shadow-sm hover:bg-cyan-100 transition-colors w-fit h-fit rounded-md'>Pay with Afterpay</motion.button>
+            </div>
+        );
+    }
+
+    const HelcimInfo = () => {
+        return (
+            <div className='w-full h-full flex place-content-center items-center gap-4'>
+                <motion.button initial={{ opacity: 0, transform: 'translateX(10px)' }} animate={{ opacity: 1, transform: 'translateX(0)' }} transition={{delay: 0}} className='px-2 py-1 border-1 border-gray-300 hover:border-accent-cyan-light drop-shadow-sm hover:bg-cyan-100 transition-colors w-fit h-fit rounded-md'>Pay with Helcim</motion.button>
+            </div>
+        );
+    }
+
+    return (
+        <div className='w-full h-full flex flex-row gap-8'>
+            <div id='paymentOption' className='h-full w-[25%] flex flex-col gap-2 overflow-scroll hide-scrollbar'>
+                {
+                    paymentMethods.map((method) => (
+                        <PaymentMethodButton key={method.id} method={method} />
+                    ))
+                }
+            </div>
+            <div id='paymentInfo' className='h-full w-full border-l-2 border-accent-cyan-light'>
+                <div className='w-full h-[15%]'>
+                    <AnimatePresence>
+                        <motion.span key={paymentMethod} initial={{ opacity: 0, transform: 'translateY(-20px)' }} animate={{ opacity: 1, transform: 'translateY(0)' }} exit={{ opacity: 0, transform: 'translateY(30px)' }} transition={{ duration: .5 , ease: 'backOut'}} className='text-2xl fixed font-semibold w-full p-2'>{paymentMethods.find(x => paymentMethod === x.id)?.name}</motion.span>
+                    </AnimatePresence>
+                </div>
+                <div className='w-full h-[85%] p-4'>
+                    {paymentMethod === 'creditCard' && <CreditCardInfo />}
+                    {paymentMethod === 'paypal' && <PayPalInfo />}
+                    {paymentMethod === 'applePay' && <ApplePayInfo />}
+                    {paymentMethod === 'googlePay' && <GooglePayInfo />}
+                    {paymentMethod === 'stripe' && <StripeInfo />}
+                    {paymentMethod === 'square' && <SquareInfo />}
+                    {paymentMethod === 'authorizeNet' && <AuthorizeNetInfo />}
+                    {paymentMethod === 'amazonPay' && <AmazonPayInfo />}
+                    {paymentMethod === 'afterpay' && <AfterPayInfo />}
+                    {paymentMethod === 'helcim' && <HelcimInfo />}
+                    {paymentMethod === 'none' && <div className='w-full h-full flex place-content-center items-center'>Select a payment method</div>}
+                </div>
+            </div>
+        </div>
+    );
+}
+
+function ConfirmationScreen() {
+    return (
+        <div className='w-full h-full flex flex-col'>
+            Confirmation Screen
         </div>
     );
 }
@@ -321,21 +542,29 @@ function CheckOut(props: Props) {
     const [checkoutStage, setCheckoutStage] = React.useState(0);
     const [checkOutVersion, setCheckoutVersion] = React.useState(0);
 
-    const handleFooterButtons = () => {
-        
+    const handleFooterButtons = (btnFunction: string) => {
+        if (btnFunction === 'back' && checkoutStage > 0) {
+            setCheckoutStage(checkoutStage - 1);
+        } else if (btnFunction === 'continue' && checkoutStage < 2) {
+            setCheckoutStage(checkoutStage + 1);
+        }
     }
 
     return (
         <div className='w-screen h-screen flex flex-col'>
             <NavBar/>
-            <button onClick={() => setCheckoutStage(checkoutStage+1)}>continue</button>
             <div className='w-full h-full bg-bg-dark p-16'>
                 <div className='w-full h-full rounded-md bg-bg-light drop-shadow-2xl flex flex-col p-8 gap-8'>
                     <div id='progressBar' className=' w-full h-[20%] flex place-content-center items-center'>
                         <ProgressBar checkoutStage={checkoutStage}/>
                     </div>
-                    <div id='information' className=' w-full h-full'>
-                        <AddressScreen/>
+                    <div id='information' className=' w-full h-[70%]'>
+                        {checkoutStage === 0 && <AddressScreen key={checkOutVersion}/>}
+                        {checkoutStage === 1 && <BillingScreen key={checkOutVersion}/>}
+                        {checkoutStage === 2 && <ConfirmationScreen key={checkOutVersion}/>}
+                    </div>
+                    <div id='footer' className='w-full h-[10%]'>
+                        <Footer buttonHandler={handleFooterButtons}/>
                     </div>
                 </div>
             </div>
