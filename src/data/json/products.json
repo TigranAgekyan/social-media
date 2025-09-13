@@ -1,0 +1,1002 @@
+[
+  {
+    "id": 1,
+    "name": "Modern Oak Sofa",
+    "category": "Sofas & Couches",
+    "price": 1299,
+    "color": "Beige",
+    "material": "Wood",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 2,
+    "name": "Classic Leather Armchair",
+    "category": "Armchairs",
+    "price": 799,
+    "color": "Brown",
+    "material": "Leather",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 3,
+    "name": "Glass Coffee Table",
+    "category": "Coffee Tables",
+    "price": 399,
+    "color": "Black",
+    "material": "Glass",
+    "rating": 3,
+    "availability": "unavailable"
+  },
+  {
+    "id": 4,
+    "name": "Marble Dining Table",
+    "category": "Dining Tables",
+    "price": 1599,
+    "color": "White",
+    "material": "Marble",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 5,
+    "name": "Velvet Dining Chair",
+    "category": "Dining Chairs",
+    "price": 249,
+    "color": "Green",
+    "material": "Velvet",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 6,
+    "name": "King Size Bed",
+    "category": "Beds",
+    "price": 1899,
+    "color": "Gray",
+    "material": "Fabric",
+    "rating": 5,
+    "availability": "unavailable"
+  },
+  {
+    "id": 7,
+    "name": "Modern Dresser",
+    "category": "Dressers",
+    "price": 699,
+    "color": "White",
+    "material": "Wood",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 8,
+    "name": "Nightstand with Drawer",
+    "category": "Nightstands",
+    "price": 199,
+    "color": "Brown",
+    "material": "Wood",
+    "rating": 3,
+    "availability": "inStock"
+  },
+  {
+    "id": 9,
+    "name": "Minimalist Desk",
+    "category": "Desks",
+    "price": 499,
+    "color": "Black",
+    "material": "Metal",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 10,
+    "name": "Tall Bookcase",
+    "category": "Bookcases",
+    "price": 599,
+    "color": "Natural Wood",
+    "material": "Wood",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 11,
+    "name": "TV Stand with Shelves",
+    "category": "TV Stands",
+    "price": 349,
+    "color": "Gray",
+    "material": "Wood",
+    "rating": 4,
+    "availability": "unavailable"
+  },
+  {
+    "id": 12,
+    "name": "Glass Door Cabinet",
+    "category": "Cabinets",
+    "price": 799,
+    "color": "White",
+    "material": "Glass",
+    "rating": 3,
+    "availability": "inStock"
+  },
+  {
+    "id": 13,
+    "name": "Entryway Bench",
+    "category": "Benches",
+    "price": 299,
+    "color": "Beige",
+    "material": "Fabric",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 14,
+    "name": "Round Ottoman",
+    "category": "Ottomans",
+    "price": 179,
+    "color": "Blue",
+    "material": "Velvet",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 15,
+    "name": "Sliding Door Wardrobe",
+    "category": "Wardrobes",
+    "price": 1299,
+    "color": "White",
+    "material": "Wood",
+    "rating": 4,
+    "availability": "unavailable"
+  },
+  {
+    "id": 16,
+    "name": "Marble Side Table",
+    "category": "Side Tables",
+    "price": 249,
+    "color": "Gold",
+    "material": "Marble",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 17,
+    "name": "Bar Stool Set",
+    "category": "Bar Stools",
+    "price": 349,
+    "color": "Black",
+    "material": "Metal",
+    "rating": 3,
+    "availability": "inStock"
+  },
+  {
+    "id": 18,
+    "name": "Console Table",
+    "category": "Console Tables",
+    "price": 399,
+    "color": "Brown",
+    "material": "Wood",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 19,
+    "name": "Wall Shelving Unit",
+    "category": "Shelving Units",
+    "price": 199,
+    "color": "White",
+    "material": "Wood",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 20,
+    "name": "Recliner Chair",
+    "category": "Recliners",
+    "price": 899,
+    "color": "Gray",
+    "material": "Leather",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 21,
+    "name": "Scandinavian Sofa",
+    "category": "Sofas & Couches",
+    "price": 1399,
+    "color": "Cream",
+    "material": "Fabric",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 22,
+    "name": "Accent Armchair",
+    "category": "Armchairs",
+    "price": 599,
+    "color": "Pink",
+    "material": "Velvet",
+    "rating": 4,
+    "availability": "unavailable"
+  },
+  {
+    "id": 23,
+    "name": "Industrial Coffee Table",
+    "category": "Coffee Tables",
+    "price": 349,
+    "color": "Black",
+    "material": "Metal",
+    "rating": 3,
+    "availability": "inStock"
+  },
+  {
+    "id": 24,
+    "name": "Extendable Dining Table",
+    "category": "Dining Tables",
+    "price": 1799,
+    "color": "Natural Wood",
+    "material": "Wood",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 25,
+    "name": "Upholstered Dining Chair",
+    "category": "Dining Chairs",
+    "price": 279,
+    "color": "Blue",
+    "material": "Fabric",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 26,
+    "name": "Queen Bed Frame",
+    "category": "Beds",
+    "price": 1599,
+    "color": "Gray",
+    "material": "Wood",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 27,
+    "name": "Six Drawer Dresser",
+    "category": "Dressers",
+    "price": 799,
+    "color": "White",
+    "material": "Wood",
+    "rating": 4,
+    "availability": "unavailable"
+  },
+  {
+    "id": 28,
+    "name": "Modern Nightstand",
+    "category": "Nightstands",
+    "price": 229,
+    "color": "Black",
+    "material": "Metal",
+    "rating": 3,
+    "availability": "inStock"
+  },
+  {
+    "id": 29,
+    "name": "Executive Desk",
+    "category": "Desks",
+    "price": 899,
+    "color": "Brown",
+    "material": "Wood",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 30,
+    "name": "Corner Bookcase",
+    "category": "Bookcases",
+    "price": 499,
+    "color": "White",
+    "material": "Wood",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 31,
+    "name": "Low Profile TV Stand",
+    "category": "TV Stands",
+    "price": 399,
+    "color": "Gray",
+    "material": "Wood",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 32,
+    "name": "Tall Storage Cabinet",
+    "category": "Cabinets",
+    "price": 899,
+    "color": "Black",
+    "material": "Metal",
+    "rating": 3,
+    "availability": "unavailable"
+  },
+  {
+    "id": 33,
+    "name": "Entryway Bench with Storage",
+    "category": "Benches",
+    "price": 349,
+    "color": "Beige",
+    "material": "Fabric",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 34,
+    "name": "Tufted Ottoman",
+    "category": "Ottomans",
+    "price": 199,
+    "color": "Blue",
+    "material": "Velvet",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 35,
+    "name": "Sliding Door Wardrobe",
+    "category": "Wardrobes",
+    "price": 1399,
+    "color": "White",
+    "material": "Wood",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 36,
+    "name": "Round Side Table",
+    "category": "Side Tables",
+    "price": 179,
+    "color": "Gold",
+    "material": "Metal",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 37,
+    "name": "Adjustable Bar Stool",
+    "category": "Bar Stools",
+    "price": 249,
+    "color": "Black",
+    "material": "Metal",
+    "rating": 3,
+    "availability": "unavailable"
+  },
+  {
+    "id": 38,
+    "name": "Modern Console Table",
+    "category": "Console Tables",
+    "price": 499,
+    "color": "Brown",
+    "material": "Wood",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 39,
+    "name": "Floating Shelving Unit",
+    "category": "Shelving Units",
+    "price": 149,
+    "color": "White",
+    "material": "Wood",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 40,
+    "name": "Power Recliner",
+    "category": "Recliners",
+    "price": 1099,
+    "color": "Gray",
+    "material": "Leather",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 41,
+    "name": "Linen Sofa",
+    "category": "Sofas & Couches",
+    "price": 1199,
+    "color": "Beige",
+    "material": "Fabric",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 42,
+    "name": "Retro Armchair",
+    "category": "Armchairs",
+    "price": 699,
+    "color": "Green",
+    "material": "Velvet",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 43,
+    "name": "Rustic Coffee Table",
+    "category": "Coffee Tables",
+    "price": 299,
+    "color": "Brown",
+    "material": "Wood",
+    "rating": 3,
+    "availability": "unavailable"
+  },
+  {
+    "id": 44,
+    "name": "Glass Top Dining Table",
+    "category": "Dining Tables",
+    "price": 1499,
+    "color": "Silver",
+    "material": "Glass",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 45,
+    "name": "Classic Dining Chair",
+    "category": "Dining Chairs",
+    "price": 199,
+    "color": "White",
+    "material": "Wood",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 46,
+    "name": "Platform Bed",
+    "category": "Beds",
+    "price": 1699,
+    "color": "Black",
+    "material": "Wood",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 47,
+    "name": "Wide Dresser",
+    "category": "Dressers",
+    "price": 899,
+    "color": "Gray",
+    "material": "Wood",
+    "rating": 4,
+    "availability": "unavailable"
+  },
+  {
+    "id": 48,
+    "name": "Bedside Nightstand",
+    "category": "Nightstands",
+    "price": 179,
+    "color": "Brown",
+    "material": "Wood",
+    "rating": 3,
+    "availability": "inStock"
+  },
+  {
+    "id": 49,
+    "name": "Standing Desk",
+    "category": "Desks",
+    "price": 799,
+    "color": "White",
+    "material": "Metal",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 50,
+    "name": "Open Bookcase",
+    "category": "Bookcases",
+    "price": 399,
+    "color": "Natural Wood",
+    "material": "Wood",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 51,
+    "name": "Media TV Stand",
+    "category": "TV Stands",
+    "price": 449,
+    "color": "Black",
+    "material": "Wood",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 52,
+    "name": "Display Cabinet",
+    "category": "Cabinets",
+    "price": 999,
+    "color": "White",
+    "material": "Glass",
+    "rating": 3,
+    "availability": "unavailable"
+  },
+  {
+    "id": 53,
+    "name": "Hallway Bench",
+    "category": "Benches",
+    "price": 259,
+    "color": "Beige",
+    "material": "Fabric",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 54,
+    "name": "Storage Ottoman",
+    "category": "Ottomans",
+    "price": 159,
+    "color": "Blue",
+    "material": "Velvet",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 55,
+    "name": "Double Door Wardrobe",
+    "category": "Wardrobes",
+    "price": 1199,
+    "color": "White",
+    "material": "Wood",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 56,
+    "name": "Metal Side Table",
+    "category": "Side Tables",
+    "price": 139,
+    "color": "Gold",
+    "material": "Metal",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 57,
+    "name": "Swivel Bar Stool",
+    "category": "Bar Stools",
+    "price": 299,
+    "color": "Black",
+    "material": "Metal",
+    "rating": 3,
+    "availability": "unavailable"
+  },
+  {
+    "id": 58,
+    "name": "Entry Console Table",
+    "category": "Console Tables",
+    "price": 349,
+    "color": "Brown",
+    "material": "Wood",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 59,
+    "name": "Wall Mounted Shelving",
+    "category": "Shelving Units",
+    "price": 179,
+    "color": "White",
+    "material": "Wood",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 60,
+    "name": "Manual Recliner",
+    "category": "Recliners",
+    "price": 799,
+    "color": "Gray",
+    "material": "Leather",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 61,
+    "name": "Sectional Sofa",
+    "category": "Sofas & Couches",
+    "price": 1599,
+    "color": "Beige",
+    "material": "Fabric",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 62,
+    "name": "Wingback Armchair",
+    "category": "Armchairs",
+    "price": 899,
+    "color": "Blue",
+    "material": "Velvet",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 63,
+    "name": "Mid-Century Coffee Table",
+    "category": "Coffee Tables",
+    "price": 349,
+    "color": "Brown",
+    "material": "Wood",
+    "rating": 3,
+    "availability": "unavailable"
+  },
+  {
+    "id": 64,
+    "name": "Round Dining Table",
+    "category": "Dining Tables",
+    "price": 1299,
+    "color": "Natural Wood",
+    "material": "Wood",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 65,
+    "name": "Stackable Dining Chair",
+    "category": "Dining Chairs",
+    "price": 149,
+    "color": "White",
+    "material": "Plastic",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 66,
+    "name": "Canopy Bed",
+    "category": "Beds",
+    "price": 2099,
+    "color": "Black",
+    "material": "Metal",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 67,
+    "name": "Tallboy Dresser",
+    "category": "Dressers",
+    "price": 699,
+    "color": "Gray",
+    "material": "Wood",
+    "rating": 4,
+    "availability": "unavailable"
+  },
+  {
+    "id": 68,
+    "name": "Floating Nightstand",
+    "category": "Nightstands",
+    "price": 129,
+    "color": "Brown",
+    "material": "Wood",
+    "rating": 3,
+    "availability": "inStock"
+  },
+  {
+    "id": 69,
+    "name": "Writing Desk",
+    "category": "Desks",
+    "price": 399,
+    "color": "White",
+    "material": "Wood",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 70,
+    "name": "Cube Bookcase",
+    "category": "Bookcases",
+    "price": 299,
+    "color": "Natural Wood",
+    "material": "Wood",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 71,
+    "name": "Modern TV Stand",
+    "category": "TV Stands",
+    "price": 499,
+    "color": "Black",
+    "material": "Wood",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 72,
+    "name": "Kitchen Cabinet",
+    "category": "Cabinets",
+    "price": 1199,
+    "color": "White",
+    "material": "Wood",
+    "rating": 3,
+    "availability": "unavailable"
+  },
+  {
+    "id": 73,
+    "name": "Shoe Bench",
+    "category": "Benches",
+    "price": 199,
+    "color": "Beige",
+    "material": "Fabric",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 74,
+    "name": "Pouf Ottoman",
+    "category": "Ottomans",
+    "price": 99,
+    "color": "Blue",
+    "material": "Velvet",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 75,
+    "name": "Sliding Wardrobe",
+    "category": "Wardrobes",
+    "price": 1499,
+    "color": "White",
+    "material": "Wood",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 76,
+    "name": "Glass Side Table",
+    "category": "Side Tables",
+    "price": 199,
+    "color": "Silver",
+    "material": "Glass",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 77,
+    "name": "Counter Bar Stool",
+    "category": "Bar Stools",
+    "price": 229,
+    "color": "Black",
+    "material": "Metal",
+    "rating": 3,
+    "availability": "unavailable"
+  },
+  {
+    "id": 78,
+    "name": "Entryway Console Table",
+    "category": "Console Tables",
+    "price": 399,
+    "color": "Brown",
+    "material": "Wood",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 79,
+    "name": "Adjustable Shelving",
+    "category": "Shelving Units",
+    "price": 249,
+    "color": "White",
+    "material": "Wood",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 80,
+    "name": "Electric Recliner",
+    "category": "Recliners",
+    "price": 1299,
+    "color": "Gray",
+    "material": "Leather",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 81,
+    "name": "Tufted Sectional Sofa",
+    "category": "Sofas & Couches",
+    "price": 1799,
+    "color": "Cream",
+    "material": "Fabric",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 82,
+    "name": "Barrel Armchair",
+    "category": "Armchairs",
+    "price": 649,
+    "color": "Pink",
+    "material": "Velvet",
+    "rating": 4,
+    "availability": "unavailable"
+  },
+  {
+    "id": 83,
+    "name": "Lift-Top Coffee Table",
+    "category": "Coffee Tables",
+    "price": 399,
+    "color": "Brown",
+    "material": "Wood",
+    "rating": 3,
+    "availability": "inStock"
+  },
+  {
+    "id": 84,
+    "name": "Oval Dining Table",
+    "category": "Dining Tables",
+    "price": 1699,
+    "color": "Natural Wood",
+    "material": "Wood",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 85,
+    "name": "Plastic Dining Chair",
+    "category": "Dining Chairs",
+    "price": 99,
+    "color": "White",
+    "material": "Plastic",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 86,
+    "name": "Poster Bed",
+    "category": "Beds",
+    "price": 1899,
+    "color": "Black",
+    "material": "Wood",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 87,
+    "name": "Wide Dresser",
+    "category": "Dressers",
+    "price": 999,
+    "color": "Gray",
+    "material": "Wood",
+    "rating": 4,
+    "availability": "unavailable"
+  },
+  {
+    "id": 88,
+    "name": "Modern Nightstand",
+    "category": "Nightstands",
+    "price": 199,
+    "color": "Brown",
+    "material": "Wood",
+    "rating": 3,
+    "availability": "inStock"
+  },
+  {
+    "id": 89,
+    "name": "Glass Writing Desk",
+    "category": "Desks",
+    "price": 599,
+    "color": "White",
+    "material": "Glass",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 90,
+    "name": "Tall Bookcase",
+    "category": "Bookcases",
+    "price": 499,
+    "color": "Natural Wood",
+    "material": "Wood",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 91,
+    "name": "TV Stand with Drawers",
+    "category": "TV Stands",
+    "price": 549,
+    "color": "Black",
+    "material": "Wood",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 92,
+    "name": "Pantry Cabinet",
+    "category": "Cabinets",
+    "price": 1099,
+    "color": "White",
+    "material": "Wood",
+    "rating": 3,
+    "availability": "unavailable"
+  },
+  {
+    "id": 93,
+    "name": "Storage Bench",
+    "category": "Benches",
+    "price": 299,
+    "color": "Beige",
+    "material": "Fabric",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 94,
+    "name": "Round Ottoman",
+    "category": "Ottomans",
+    "price": 129,
+    "color": "Blue",
+    "material": "Velvet",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 95,
+    "name": "Triple Door Wardrobe",
+    "category": "Wardrobes",
+    "price": 1599,
+    "color": "White",
+    "material": "Wood",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 96,
+    "name": "Stone Side Table",
+    "category": "Side Tables",
+    "price": 299,
+    "color": "Gray",
+    "material": "Stone",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 97,
+    "name": "Wooden Bar Stool",
+    "category": "Bar Stools",
+    "price": 199,
+    "color": "Brown",
+    "material": "Wood",
+    "rating": 3,
+    "availability": "unavailable"
+  },
+  {
+    "id": 98,
+    "name": "Classic Console Table",
+    "category": "Console Tables",
+    "price": 449,
+    "color": "Brown",
+    "material": "Wood",
+    "rating": 4,
+    "availability": "inStock"
+  },
+  {
+    "id": 99,
+    "name": "Adjustable Shelving Unit",
+    "category": "Shelving Units",
+    "price": 199,
+    "color": "White",
+    "material": "Wood",
+    "rating": 5,
+    "availability": "inStock"
+  },
+  {
+    "id": 100,
+    "name": "Luxury Recliner",
+    "category": "Recliners",
+    "price": 1499,
+    "color": "Gray",
+    "material": "Leather",
+    "rating": 4,
+    "availability": "inStock"
+  }
+]

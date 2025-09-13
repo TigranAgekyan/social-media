@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+    --color-bg-light: #f8f7f9;
+    --color-bg-dark: #EEEEEE;
+    --color-accent-yellow: #f7ec59;
+    --color-accent-cyan-light: #58B09C;
+    --color-accent-cyan-dark: #386150;
+}
+
+.hide-scrollbar {
+    scrollbar-width: none; /* Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+}
